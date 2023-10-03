@@ -21,6 +21,7 @@ return new class extends Migration
         });
          AgentModel::create([ 'name' => 'Colin Hoover', 'country' => 'America', 'type'=> '20']);
         AgentModel::create([ 'name' => 'Monica Murphy', 'country' => 'Hungary', 'type'=> '22']); 
+        AgentModel::create([ 'name' => 'Monica valami', 'country' => 'Korea', 'type'=> '25']); 
     }
     
 

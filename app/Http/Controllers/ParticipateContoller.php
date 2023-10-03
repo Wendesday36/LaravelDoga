@@ -15,7 +15,7 @@ class ParticipateContoller extends Controller
     }
     public function destroy($id){
         return Participate:: find($id)->delete();
-       // return redirect('/book/list');
+        return redirect('/participates/list');
     }
     public function update(Request $request,$id){
         $participate =  Participate:: find($id);
@@ -23,7 +23,7 @@ class ParticipateContoller extends Controller
         $participate ->event_id = $request->event_id;
         $participate ->user_id = $request->user_id;
         $participate->save();
-        //return redirect('/book/list');
+        return redirect('/participates/list');
     }
     public function store(Request $request){
         $participate = new Participate();
@@ -31,12 +31,12 @@ class ParticipateContoller extends Controller
         $participate ->event_id = $request->event_id;
         $participate ->user_id = $request->user_id;
         $participate->save();
-        //return redirect('/book/list');
+        return redirect('/participates/list');
     }
   
     public function listView(){
         $participates = Participate::all();
-        return view('participate.list',['books'=>$participates]);
+        return view('participates.list',['participates'=>$participates]);
     }
     
 }

@@ -22,6 +22,7 @@ return new class extends Migration
         });
         Participate::create([ 'present' => 'true', 'event_id' => 1, 'user_id'=> 1]);
         Participate::create([ 'present' => 'false ', 'event_id' => 2, 'user_id'=> 1]);
+        Participate::create([ 'present' => 'true ', 'event_id' => 1, 'user_id'=> 2]);
     }
 
     /**

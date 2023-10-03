@@ -21,6 +21,7 @@ return new class extends Migration
         });
         EventModel::create([ 'date' => '2023-05-06', 'country' => 'America', 'agency_id' => 1,'limit'=> 20]);
         EventModel::create([ 'date' => '2023-04-09 ', 'country' => 'Hungary','agency_id' => 2, 'limit'=> 22]);
+        EventModel::create([ 'date' => '2023-04-19 ', 'country' => 'Korea','agency_id' => 2, 'limit'=> 25]);
     }
 
     /**
