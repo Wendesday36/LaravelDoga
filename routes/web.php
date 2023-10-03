@@ -27,3 +27,5 @@ Route::delete('/api/participates/{id}', [ParticipateContoller::class,'destroy'])
 
 //view
 Route::get('/participates/list', [ParticipateContoller::class, 'listView']);
+Route::get('/participates/edit/{id}', [ParticipateContoller::class, 'editView']);
+Route::get('/participates/new', [ParticipateContoller::class, 'newView']);
